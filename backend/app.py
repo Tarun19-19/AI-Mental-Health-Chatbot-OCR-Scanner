@@ -79,6 +79,10 @@ def full_analysis():
 def health():
     return jsonify({"status": "ok", "service": "Mental Health AI API"})
 
+@app.route('/api/checkuphealth', methods=['GET'])
+def health():
+    return jsonify({"status": "ok", "service": "Mental Health AI API"})
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
